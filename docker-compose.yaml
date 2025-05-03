@@ -1,0 +1,16 @@
+services:
+    evaluacion:
+        build: ./evaluacion
+        ports:
+            - "9001:9000"
+            
+    estudiante:
+        build: ./estudiante
+        ports:
+            - "9002:9000"
+            
+    database:
+        image: 'postgres:15.1'
+        ports:
+            - "9003:5432"
+        restart: always
