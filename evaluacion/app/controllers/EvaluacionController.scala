@@ -13,7 +13,7 @@ object Evaluacion {
 }
 
 object DatabaseHandler {
-  val url: String = "jdbc:postgresql://localhost:9003/ejemplo"
+  val url: String = "jdbc:postgresql://database:5432/ejemplo"
   val props: Properties = new Properties()
   props.setProperty("user", "ejemplo")
   props.setProperty("password", "ejemplo")
