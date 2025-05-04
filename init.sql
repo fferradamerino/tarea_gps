@@ -15,7 +15,7 @@ CREATE TABLE Evaluacion (
 );
 
 INSERT INTO Estudiante (rut, nombre_completo, edad, curso)
-	VALUES ("20.629.178-8", "Fabián Ferrada", 24, 6);
+	VALUES ('20.629.178-8', 'Fabián Ferrada', 24, 'Gestión de proyectos de software');
 	
 INSERT INTO Evaluacion (rut_estudiante, semestre, asignatura, evaluacion)
-	VALUES ("20.629.178-8", 1, "Gestión de proyectos de software", 7.0);
+	VALUES ('20.629.178-8', 1, 'Gestión de proyectos de software', 7.0);
