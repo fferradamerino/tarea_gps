@@ -13,4 +13,3 @@ services:
         image: 'postgres:15.1'
         ports:
             - "9003:5432"
-        restart: always
