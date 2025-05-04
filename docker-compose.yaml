@@ -8,8 +8,16 @@ services:
         build: ./estudiante
         ports:
             - "9002:9000"
-            
+
     database:
-        image: 'postgres:15.1'
+        image: 'postgres'
+        volumes:
+            - ./init.sql:/docker-entrypoint-initdb.d/init.sql
+        restart: always
+        shm_size: 128mb
+        environment:
+            POSTGRES_USER: ejemplo
+            POSTGRES_PASSWORD: ejemplo
+            POSTGRES_DB: ejemplo
         ports:
             - "9003:5432"
